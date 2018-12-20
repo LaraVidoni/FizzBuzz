@@ -1,5 +1,10 @@
 package iut.unilim.fr.fizzbuzz;
 
+import rules.Regle;
+import rules.RegleBuzz;
+import rules.RegleFizz;
+import rules.RegleFizzBuzz;
+
 public class FizzBuzz {
 
 	private RegleFizzBuzz regleFizzBuzz = new RegleFizzBuzz();
