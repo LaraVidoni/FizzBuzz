@@ -4,12 +4,14 @@ public class FizzBuzz {
 
 	public String donnerLaReponsePour(Integer nombre) {
 		RegleFizzBuzz regleFizzBuzz = new RegleFizzBuzz();
-
+		RegleBuzz regleBuzz = new RegleBuzz();
+		
 		if (regleFizzBuzz.estVerifieePar(nombre))
 			return regleFizzBuzz.valeurAAfficherSiRegleVerifiee(nombre);
 
-		if (isBuzz(nombre))
-			return "buzz";
+		
+		if (regleBuzz.estVerifieePar(nombre))
+			return regleBuzz.valeurAAfficherSiRegleVerifiee(nombre);
 
 		if (isFizz(nombre))
 			return "fizz";
@@ -17,14 +19,8 @@ public class FizzBuzz {
 		return String.valueOf(nombre);
 	}
 
-	private boolean isFizzBuzz(Integer nombre) {
-		return 0 == nombre % (3 * 5);
-	}
 
-	private boolean isBuzz(Integer nombre) {
-		return 0 == nombre % 5;
-	}
-
+	
 	private boolean isFizz(Integer nombre) {
 		return 0 == nombre % 3;
 	}

@@ -8,12 +8,10 @@ import static org.junit.Assert.assertEquals;
 public class FizzBuzzTest {
 
 	private FizzBuzz fizzBuzz;
-	private Fizz fizz;
 
 	@Before
 	public void setup() {
 		fizzBuzz = new FizzBuzz();
-		 fizz = new Fizz();
 	}
 
 	@Test
