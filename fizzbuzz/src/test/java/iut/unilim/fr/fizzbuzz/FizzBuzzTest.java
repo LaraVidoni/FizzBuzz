@@ -8,10 +8,12 @@ import static org.junit.Assert.assertEquals;
 public class FizzBuzzTest {
 
 	private FizzBuzz fizzBuzz;
+	private Fizz fizz;
 
 	@Before
 	public void setup() {
 		fizzBuzz = new FizzBuzz();
+		 fizz = new Fizz();
 	}
 
 	@Test
@@ -41,4 +43,5 @@ public class FizzBuzzTest {
 		assertEquals("fizzbuzz", fizzBuzz.donnerLaReponsePour(30));
 		assertEquals("fizzbuzz", fizzBuzz.donnerLaReponsePour(45));
 	}
+
 }
