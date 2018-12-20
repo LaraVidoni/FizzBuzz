@@ -10,7 +10,15 @@ import rules.RegleFizzBuzz;
 
 public class FizzBuzz {
 
-	List<Regle> regles = FizzBuzzReglesFactory.build();
+	private List<Regle> regles;
+
+	public FizzBuzz() {
+		this(FizzBuzzReglesFactory.build());
+	}
+
+	public FizzBuzz(List<Regle> regle) {
+		this.regles = regle;
+	}
 
 	public String donnerLaReponsePour(Integer nombre) {
 
