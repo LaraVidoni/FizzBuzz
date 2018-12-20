@@ -1,4 +1,4 @@
-package iut.unilim.fr.fizzbuzz;
+package rules;
 
 public interface Regle {
 

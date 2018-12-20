@@ -1,4 +1,4 @@
-package iut.unilim.fr.fizzbuzz;
+package rules;
 
 public  class RegleFizz implements Regle {
 	public RegleFizz() {}
